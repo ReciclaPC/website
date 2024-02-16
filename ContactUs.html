@@ -1,37 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>ReciclaPC</title>
-<meta charset="utf-8">
-
-<!--For Responsive Web Design Using Media Queries - CSS3 -->
-<meta name="viewport" content = "width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/reciclapc.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciclaPC</title>
+    <link rel="stylesheet" href="css/reciclapc.css">
 </head>
 <body>
-<header> <!--parent-->
-<img src="images/logo.jpg" alt ="Logo"> <!--child-->
-<h1>ReciclaPC</h1> <!--child-->
-</header>
 
-<!--Burger Menu Section-->
-<ul class="topnav"> <!--parent-->
+    <header> <!--parent-->
+        <img src="images/logo.jpg" alt ="Logo"> <!--child-->
+        <h1>ReciclaPC</h1> <!--child-->
+        
+    </header>
+
+    <!--Burger Menu Section-->
+    <ul class="topnav"> <!--parent-->
     <li class="icon"><a href="#">&#9776;&nbsp;MENU</a></li> <!--child-->
     <li class= "hide"><a href="index.html">Home</a></li> <!--child-->
     <li class= "hide"><a href="about.html">About</a></li> <!--child-->
     <li class= "hide"><a href="services.html">Services</a></li> <!--child-->
     <li class= "hide"><a href="faqs.html">Any Questions?</a></li> <!--child-->
     <li class= "hide"><a href="ContactUs.html">Contact Us</a></li> <!--child-->
-    </ul>
+    </ul> 
 
 <main>
+<div class="info-section">
+    <!-- Opening Hours Div -->
+    <div id="opening-hours">
+        <h2>Opening Hours</h2>
 
+        <table>
+        <tr class ="Monday"></tr>  
+        <td><span>Monday:</td></span>
+        <td>10:00 - 13:00</td>
+        <td>14:30 - 19:00</td>
+
+        <tr class ="Tuesday"></tr>  
+        <td><span>Tuesday:</td></span>
+        <td>10:00 - 13:00</td>
+        <td>14:30 - 19:00</td>
+
+        <tr class ="Wednesday"></tr>  
+        <td><span>Wednesday:</td></span>
+        <td>10:00 - 13:00</td>
+        <td>14:30 - 19:00</td>
+
+        <tr class ="Thursday"></tr>  
+        <td><span>Thursday:</td></span>
+        <td>10:00 - 13:00</td>
+        <td>14:30 - 19:00</td>
+
+        <tr class ="Friday"></tr>  
+        <td><span>Friday:</td></span>
+        <td>10:00 - 13:00</td>
+        <td>14:30 - 19:00</td>
+
+        <tr class ="Saturday & Sunday"></tr>  
+        <td><span>Saturday & Sunday</td></span>
+        <td class="closed">CLOSED</td>  
+        </table>
+    </div>
+
+    <!-- Location Div -->
+    <div id="location">
+        <h2>Location</h2>
+        <p>ReciclaPC R. Dom Frei Caetano Brandão 141, 4700-031 Braga, Portugal</p>
+       
+            <div class="location-image-container" id="locationImg">
+                <a href="https://www.google.com/maps/place/ReciclaPC/@41.5490198,-8.4284241,3a,75y,77.24h,101.19t/data=!3m6!1e1!3m4!1sV2ef1x9VVKPWJGv8xqMJog!2e0!7i16384!8i8192!4m14!1m7!3m6!1s0xd24fec2c4a228f7:0xe6239e5e8ac25368!2sReciclaPC!8m2!3d41.5490193!4d-8.4283397!16s%2Fg%2F1ptvsnst4!3m5!1s0xd24fec2c4a228f7:0xe6239e5e8ac25368!8m2!3d41.5490193!4d-8.4283397!16s%2Fg%2F1ptvsnst4?entry=ttu" target="_blank">
+                    <img src="images/Location.JPG" alt="Location" id="location-image">
+                </a>
+                <div class="text-bubble">Click here to find us on the map!</div>
+              </div>
+       
+    </div>
+</div>
+<!-- code for contact form -->
+
+    <form id="contact-form" action="contact.php" method="post">
+        <h2>Contact Us</h2>
+
+        <div class="form-group">
+            <label for="name">Name:<span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:<span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message:<span class="required">*</span></label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
 </main>
-
 <footer>
-    <div id="google_translate_element"></div> 
+<!--contact us section-->
+    <div class="contact">
+    <p>Contact us at: <a href="ContactUs.html"> rreciclapc@gmail.com</a>or 916 571 937</p>
+    <a href="skype:reciclapc?call" class="skype-contact">
+        <img src="images/skypeLogo.png" alt="Skype logo"> Call us on Skype
+      </a>
+      <a href="https://www.facebook.com/reciclapc" class="facebook-contact" target="_blank">
+        <img src="images/fbLogo.png" alt="Facebook logo"> Visit us on Facebook
+      </a>
+</div>
 
-<script type="text/javascript" src="javascript/translator.js"></script>
 </footer>
 </body>
 <script src="javascript/website.js"></script>
