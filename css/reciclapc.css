@@ -101,12 +101,20 @@ body {
     display: block;
 }
 
-
+.thelogo {
+    margin-top: 2%;
+width: 100px;
+display: block;
+border: 2px solid #ccc; /* Add border */
+    border-radius: 50%; /* Make the border circular */
+    padding: 5px;
+}
 
 /*Image styles*/
 img {
     width: 100%;
     height: auto;
+    margin: 0 auto;
 }
 
 /*Paragraph styles*/
@@ -399,11 +407,11 @@ footer {
 
 /* Media Queries*/
 @media screen and (min-width:700px) {
+    
     /*General/Homepage CSS*/
     main {
         max-width: 900px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0 auto;
     }
 
 
@@ -423,6 +431,21 @@ footer {
         display: none;
     }
 
+    .thelogo {
+        position: absolute;
+        top: 250px; /* Adjust top position as needed */
+        left: 30px; /* Adjust left position as needed */
+        z-index: 999; /* Set a high z-index to ensure it appears above other content */
+    }
+    
+    
+    main {
+        padding-left: 150px; /* Adjust the padding to accommodate the logo */
+    }
+    
+        
+
+
     /*Two Parts*/
     .twoparts {
         display: flex;
@@ -437,7 +460,6 @@ footer {
     
 /*about section*/
 
-/* CSS */
 .aboutt {
     display: flex;
     flex-direction: column;
